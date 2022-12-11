@@ -28,6 +28,7 @@ def part2(calories: list):
     new_calories = []
     for i in calories:
         new_calories.append(sum(i))
+    # Hack cuz i messed up parsing
     scuffed = sorted(set(new_calories), reverse=True)
     return scuffed[0] + scuffed[1] + scuffed[2]
 

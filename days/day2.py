@@ -43,7 +43,7 @@ lose_mapper = {
     "C": "Y",
 }
 
-# I should have just mapped wins not calculate who wins using points
+# Way more lines than I actually needed
 def round_score(choice: tuple[str, str], opponent_score, player_score: int) -> tuple[int, int]:
     opponent_score = 0
     player_score = 0
