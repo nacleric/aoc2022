@@ -21,7 +21,7 @@ def part1(calories: list):
     for i in calories:
         if most_calories < sum(i):
             most_calories = sum(i)
-    print(most_calories)
+    return most_calories
 
 
 def part2(calories: list):
@@ -29,10 +29,10 @@ def part2(calories: list):
     for i in calories:
         new_calories.append(sum(i))
     scuffed = sorted(set(new_calories), reverse=True)
-    return (scuffed[0], scuffed[1], scuffed[2])
+    return scuffed[0] + scuffed[1] + scuffed[2]
 
 
 if __name__ == "__main__":
     calories = parse_file()
-    part1(calories)
+    print(part1(calories))
     print(part2(calories))

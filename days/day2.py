@@ -74,7 +74,6 @@ def part1(rounds: list[tuple[str, str]]):
         round_result = round_score(choice, total_opponent_score, total_player_score)
         total_opponent_score += round_result[0]
         total_player_score += round_result[1]
-
     return (total_opponent_score, total_player_score)
 
 
